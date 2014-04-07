@@ -30,6 +30,16 @@ public class ImageButton extends Button {
 	private final Image image;
 	private ImageButtonStyle style;
 
+	
+	public void setRotation(float degress) {
+		image.setRotation(degress);
+	}
+	
+	public void setOrigin(float x, float y) {
+		image.setOrigin(x, y);
+		
+	}
+
 	public ImageButton (Skin skin) {
 		this(skin.get(ImageButtonStyle.class));
 	}
